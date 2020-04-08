@@ -1,1 +1,35 @@
-<p>sidebar works!</p>
+<mat-nav-list>
+  <div class="profile-card" style="justify-content:center;">
+    <div class="header">
+      <h2 align="center">Sefat Anam</h2>
+      <h4 align="center">sefatanam@outlook.com</h4>
+    </div>
+    <img  class="img" src="/assets/images/SefatAnam.jpg" alt="Sefat Anam">
+
+  </div>
+
+  <mat-divider></mat-divider>
+  <h2 matSubheader>Pages</h2>
+  <a mat-list-item routerLinkActive="list-item-active" routerLink='/'>Dashboard</a>
+  <a mat-list-item routerLinkActive="list-item-active" routerLink='/posts'>Posts</a>
+  <a mat-list-item routerLinkActive="list-item-active" routerLink='/article'>Articles</a>
+
+  <mat-divider></mat-divider>
+  <h2 matSubheader>Tools</h2>
+  <a mat-list-item routerLinkActive="list-item-active" routerLink='/contacts'>
+    <mat-icon>import_contacts</mat-icon> Import Contacts
+  </a>
+  <a mat-list-item routerLinkActive="list-item-active" routerLink='/contacts'>
+    <mat-icon>contact_phone</mat-icon> Phone
+  </a>
+ 
+  <!-- <div>
+        profile
+    </div>
+    
+    <mat-divider></mat-divider>
+    <div>Line Chart</div>
+    menu
+    <mat-divider></mat-divider>
+    another menu  -->
+</mat-nav-list>
