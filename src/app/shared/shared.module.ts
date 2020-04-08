@@ -7,12 +7,14 @@ import { MatDividerModule, MatToolbarModule, MatIconModule, MatButtonModule, Mat
 
 import{FlexLayoutModule} from '@angular/flex-layout'
 import { RouterModule } from '@angular/router';
+import { AreaComponent } from './widgets/area/area.component';
 
 @NgModule({
   declarations: [
    HeaderComponent,
    FooterComponent,
    SidebarComponent,
+   AreaComponent,
 
 
   ],
@@ -26,10 +28,12 @@ import { RouterModule } from '@angular/router';
     MatMenuModule,
     MatListModule,
     RouterModule
+    
   ],exports:[
     HeaderComponent,
     FooterComponent,
-    SidebarComponent
+    SidebarComponent,
+    AreaComponent
   ]
 })
 export class SharedModule { }
