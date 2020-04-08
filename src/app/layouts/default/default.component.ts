@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./default.component.scss']
 })
 export class DefaultComponent implements OnInit {
-  public isSideBarOpen:boolean=false;
+  public isSideBarOpen:boolean=true;
 
   constructor() { }
 
