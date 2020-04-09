@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import * as Highcharts from 'highcharts';
 import HC_exporting from 'highcharts/modules/exporting';
 
@@ -9,6 +9,11 @@ import HC_exporting from 'highcharts/modules/exporting';
 })
 export class CardComponent implements OnInit {
 
+
+  @Input() label: string;
+  @Input() total: string;
+  @Input() percentage: string;
+
   Highcharts = Highcharts;
   chartOptions: {};
 
@@ -18,26 +23,38 @@ export class CardComponent implements OnInit {
 
     this.chartOptions = {
       chart: {
-        type: 'area'
+        type: 'area',
+        backgroundColor: null,
+        borderWidth: 0,
+        margin: [2, 2, 2, 2],
+        height: 60
       },
       title: {
-        text: 'Growth by Region'
+        text: null
       },
-     
       tooltip: {
         split: true,
         outside: true
-      },legend:{
-        enabled:false
+      }, legend: {
+        enabled: false
       },
       exporting: {
         enabled: true
       }, credits: {
         enabled: false
+      }, xAxis: {
+        label: {
+          enabled: false
+        },
+        title: {
+          text: null
+        },
+        startOnTrick: false,
+        endOnTrick: false,
+        trickOptions: []
       },
-
       series: [{
-        data: [71, 66, 44, 71]
+        data: [45, 66, 24, 71]
       }]
     };
 
@@ -45,7 +62,7 @@ export class CardComponent implements OnInit {
     setTimeout(() => {
       window.dispatchEvent(
         new Event('resze')
-      )
+      );
     }, 300);
   }
 

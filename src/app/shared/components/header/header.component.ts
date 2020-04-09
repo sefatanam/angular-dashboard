@@ -18,6 +18,11 @@ export class HeaderComponent implements OnInit {
   toggleSideBarMenu() {
 
     this.toggleSideBarForMe.emit();
+    setTimeout(() => {
+      window.dispatchEvent(
+        new Event('resze')
+      );
+    }, 1000);
   }
 
 }
