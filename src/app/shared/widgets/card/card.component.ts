@@ -14,9 +14,11 @@ export class CardComponent implements OnInit {
   @Input() total: string;
   @Input() percentage: string;
 
+
+
   Highcharts = Highcharts;
   chartOptions: {};
-
+  @Input() data = [];
   constructor() { }
 
   ngOnInit(): void {
@@ -54,7 +56,7 @@ export class CardComponent implements OnInit {
         trickOptions: []
       },
       series: [{
-        data: [45, 66, 24, 71]
+        data: this.data
       }]
     };
 
