@@ -1,6 +1,9 @@
-# NgDashboard
+# Dashboard - Using Angular Material
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0.
+
+## Dashboard layout Design
+![Screenshot_5](https://user-images.githubusercontent.com/37630292/78893023-4e8b8d00-7a8c-11ea-8a27-8502687d9b17.jpg)
 
 ## Development server
 
