@@ -1,0 +1,19 @@
+{
+    "customers":[
+        {
+            "id":1,
+            "name":"Sefat Anam",
+            "phone": "465464684",
+            "address":"Dhaka",
+            "membership":"Gold"
+        },
+        {
+            "id":2,
+            "name":"Kama;",
+            "phone": "7974615",
+            "address":"Dhaka",
+            "membership":"Silver"
+        }
+    ]
+
+}
